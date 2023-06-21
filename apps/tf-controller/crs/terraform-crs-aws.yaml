@@ -12,3 +12,9 @@ spec:
     kind: GitRepository
     name: tf-aws
     namespace: flux-system
+  varsFrom:
+  - kind: Secret
+    name: aws-credentials
+    varsKeys:
+    - access
+    - secret
