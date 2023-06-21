@@ -7,3 +7,4 @@ resources:
   - repository.yaml
   - repository-tf.yaml
   - deployment.yaml
+  - deploy-crs.yaml
