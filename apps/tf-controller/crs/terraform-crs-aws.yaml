@@ -12,6 +12,9 @@ spec:
     kind: GitRepository
     name: tf-aws
     namespace: flux-system
+  tfstate:
+    forceUnlock: "yes"
+    lockIdentifier: a5124beb-3cfc-cbab-3c10-de7e14f14ea4
   storeReadablePlan: human
   varsFrom:
   - kind: Secret
