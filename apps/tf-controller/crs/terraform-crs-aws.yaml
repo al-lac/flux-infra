@@ -8,7 +8,7 @@ spec:
   interval: 1m
   approvePlan: auto
   #approvePlan: "plan-main@sha1:b1cfd56a19260e6c99654854bef2550e22a7ee8a"
-  path: ./
+  path: ./tf-controller/
   sourceRef:
     kind: GitRepository
     name: tf-aws
