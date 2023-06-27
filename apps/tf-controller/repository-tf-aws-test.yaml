@@ -9,3 +9,6 @@ spec:
   url: https://github.com/al-lac/tf-controller-aws
   ref:
     branch: main
+  ignore: |
+    # include all
+    !/**
