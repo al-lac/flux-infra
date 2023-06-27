@@ -1,0 +1,22 @@
+---
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: tf-controller-aws
+  namespace: flux-system
+spec:
+  interval: 1m
+  approvePlan: ""
+  path: ./
+  sourceRef:
+    kind: GitRepository
+    name: tf-controller-aws
+    namespace: flux-system
+  storeReadablePlan: human
+  refreshBeforeApply: true
+  varsFrom:
+  - kind: Secret
+    name: aws-credentials
+    varsKeys:
+    - access
+    - secret
