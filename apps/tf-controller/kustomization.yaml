@@ -5,7 +5,7 @@ namespace: flux-system
 
 resources:
   - repository.yaml
-  - repository-tf.yaml
+  - repository-tf-helloworld.yaml
   - repository-tf-aws.yaml
   - repository-tf-aws-test.yaml
   - deployment.yaml

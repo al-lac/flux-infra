@@ -16,8 +16,7 @@ spec:
     name: helloworld-output
   vars:
   - name: subject
-    value:
-      - CNCF
+    value: CNCF
   varsFrom:
   - kind: Secret
     name: helloworld-secret
